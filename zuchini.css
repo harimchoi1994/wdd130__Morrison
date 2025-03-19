@@ -1,0 +1,120 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:wght@400;700&display=swap');
+
+/* Basic Styles */
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  padding: 1em;
+  background: #2f632a;
+  color: white;
+  border-radius: 15px;
+}
+
+nav {
+  background: rgb(181, 47, 47);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+nav a:hover {
+  background: white;
+  color: rgb(181, 47, 47);
+  border-radius: 5px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Sections */
+.section1 {
+  background: #6a9766;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section2 {
+  background: rgb(218, 111, 111);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.section3 {
+  background: #2f632a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background: white;
+  padding: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(181, 47, 47);
+  margin-bottom: 20px;
+}
+
+/* Tagline */
+.tagline {
+  font-style: italic;
+  color: #074a01;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background: #074a01;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Logo */
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+
+nav .logo img {
+  width: 100%;
+  height: auto;
+}
