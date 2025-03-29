@@ -3,73 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza & Diet</title>
-    <link rel="stylesheet" href="zuchini.css"> <!-- CSS 파일 연결 -->
+    <title>Zucchini Bros Pizza - Healthy Gourmet Pizza</title>
+<link rel="stylesheet" href="zuchini.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-
     <!-- Header -->
     <header>
-        <nav>
-            <ul>
-                <div class="logo">
-                    <img src="images/zucchini_bros_logo.jpeg" alt="Logo">
-                </div>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="order-ash.html">Place an Order</a></li>
-                <li><a href="#">Jobs</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="container">
+          <div class="logo">
+            <img src="images/logo_images.png" alt="Zucchini Bros Pizza">
+          </div>
+          <h1 class="site-name">Zucchini Bros Pizza</h1>
+          <div class="search-bar">
+            <input type="text" placeholder="Search our menu...">
+            <button class="search-btn">Search</button>
+          </div>
+          <nav>
+            <a href="#" class="active">Home</a>
+            <a href="order-ash.html">Place an Order</a>
+            <a href="#">Jobs</a>
+            <a href="#">Cart</a>
+          </nav>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <img src="images/zucchini_pizza_1.jpg" alt="Hero Image">
-        <h1>Hero Image</h1>
+        <div class="hero-background">
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="hero-content">
+                        <h2>Healthy Meets <span>Delicious</span></h2>
+                        <p class="tagline">Have your Pizza and your diet too</p>
+                        <div class="cta-container">
+                            <a href="#menu" class="cta-button primary">View Our Menu</a>
+                            <a href="#about" class="cta-button secondary">Our Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Tagline -->
-    <p class="tagline">Have your Pizza and your diet too</p>
+<!-- Why Choose Zucchini Bros Section -->
+<!-- Why Choose Section -->
+<section class="why-choose" id="why-choose">
+    <div class="section-header">
+        <h2>Why Choose <span>Zucchini Bros</span></h2>
+        <p>Innovative healthy pizza without sacrificing taste</p>
+    </div>
+</section>
 
-    <!-- Image & Section Grid -->
-    <div class="grid-container">
-        <!-- Section 1 -->
-        <div class="box">
-            <img src="images/zucchini_pizza_2.jpg" alt="Image 1">
-            <p>Section One: Welcome to Zucchini Bros. Pizza: a classic pizzeria with a 
-                twist: All of our crust is made out of fresh zucchini! As gross as that 
-                sounds, this healthier option tastes just as good as normal pizza dough 
-                without any of the guilt. And this is coming from people who hate 
-                zucchini... Just like you! 
-            </p>
+<!-- Highlight Cards Section -->
+<section class="highlight" id="highlight">
+    <div class="container">
+        <!-- Highlight Card 1 -->
+        <div class="highlight-card1">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4CAF50" d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M15,18H4v-4h11V18z M15,13H4V9h11V13z M20,18h-4V9h4V18z"/>
+                </svg>
+            </div>
+            <h3>Low Carb</h3>
+            <p>Our zucchini crust has 75% fewer carbs than traditional pizza dough</p>
         </div>
-        
-        <!-- Section 2 -->
-        <div class="box">
-            <img src="images/Zucchini-Crust-Pizza_-6.webp" alt="Image 2">
-            <p>Section Two: Our crust is always made out of fresh zucchini that is grown at 
-                our own farms. With the nasty juice squeezed out and thrown together with 
-                tasty ingredients like garlic and parmesan cheese, you'd never guess you 
-                were eating zucchini if it weren't written on the box. 
-            </p>
+        <!-- Highlight Card 2 -->
+        <div class="highlight-card2">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4CAF50" d="M12,2L4.5,20.29L5.21,21L12,18L18.79,21L19.5,20.29L12,2z"/>
+                </svg>
+            </div>
+            <h3>Farm Fresh</h3>
+            <p>All our ingredients are sourced from local farms for maximum freshness</p>
         </div>
-
-        <!-- Section 3 -->
-        <div class="box">
-            <img src="images/base_crust.jpeg" alt="Image 3">
-            <p>Section Three: We have a variety of toppings to choose from, including the classics 
-                like pepperoni and sausage, as well as some more unique options like 
-                pineapple and jalapenos. We also have a variety of sauces to choose from, 
-                including our famous Zucchini Sauce, which is made from fresh zucchini 
-                grown at our farms. 
-            </p>
+        <!-- Highlight Card 3 -->
+        <div class="highlight-card3">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#4CAF50" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/>
+                </svg>
+            </div>
+            <h3>Guilt Free</h3>
+            <p>Enjoy full pizza flavor with a fraction of the calories and carbs</p>
         </div>
     </div>
+</section>
+
+
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2>Our <span>Story</span></h2>
+                    </div>
+                    <p>Welcome to Zucchini Bros. Pizza: a classic pizzaria with a 
+                        twist: All of our crust is made out of fresh zucchini! As gross as that 
+                        sounds, this healthier option tastes just as good as normal pizza dough 
+                        without any of the guilt. And this is coming from people who hate 
+                        zucchini... Just like you! </p>
+                    <p>
+                        But don’t just take our word for it—try it for yourself!
+                         Each pizza is carefully crafted to highlight the natural flavors of fresh zucchini, 
+                         paired with your favorite toppings, from rich cheeses to savory meats and vibrant veggies. 
+                         Whether you’re grabbing a quick lunch or enjoying a night out with friends, 
+                         our pizzas are the perfect choice for anyone looking for a tasty and healthier alternative to traditional pizza.
+                          At Zucchini Bros., we promise that even if you're not a zucchini fan, 
+                        you’ll be hooked after the first bite. Come on in and taste the twist that has everyone talking!
+                    </p>
+                    <a href="#" class="text-btn">Read More About Us <span>&rarr;</span></a>
+                </div>
+                <div class="about-image">
+                   <img src="images/zucchini_pizza_1.jpg" alt="About Us Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span>Specialties</span></h2>
+                <p>The perfect combination of nutrition and taste</p>
+            </div>
+                <div class="feature-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                        <img src="images/zucchini_pizza_2.jpg" alt="Feature Image 1">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Farm-to-Table Zucchini Crust</h3>
+                            <p>Our signature crust is made from fresh zucchini grown on our own farms. We carefully remove excess moisture and blend it with premium ingredients like garlic and Parmesan cheese. The result? A delicious, nutritious base that you'd never guess was mostly vegetables.</p>
+                            <a href="#" class="text-btn">Learn More <span>&rarr;</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                        <img src="images/Zucchini-Crust-Pizza_-6.webp" alt="Feature Image 2">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Gourmet Toppings & Sauces</h3>
+                            <p>We offer a wide variety of premium toppings, from classic favorites like pepperoni and Italian sausage to unique options like roasted bell peppers and artichoke hearts. Our signature Zucchini Sauce is a house specialty, made from the same farm-fresh zucchini as our crust.</p>
+                            <a href="#" class="text-btn">View Menu <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Try the <span>Healthiest Pizza</span> You'll Ever Love?</h2>
+                <p>Order online for pickup or delivery today!</p>
+                <a href="#" class="cta-button primary large">Order Now</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        Footer
+        <div class="footer-container">
+                
+           <div class="footer-text">
+            <span style="font-size: 1.5em; font-weight: bold;">Zucchini Bros Pizza</span>
+           </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Menu</h3>
+                    <a href="#">Pizza Menu</a>
+                    <a href="#">Sides</a>
+                    <a href="#">Beverages</a>
+                    <a href="#">Nutrition Info</a>
+                </div>
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <a href="#">Our Story</a>
+                    <a href="#">Locations</a>
+                    <a href="#">Franchise</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Delivery Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Newsletter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Zucchini Bros Pizza. All rights reserved.</p>
+        </div>
     </footer>
-
+    <!-- Back to Top Button -->
+    </a>
 </body>
 </html>
