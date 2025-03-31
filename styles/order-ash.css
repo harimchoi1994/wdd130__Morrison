@@ -41,14 +41,14 @@ body {
 }
 
 .logo {
-  position: absolute; /* 로고를 절대 위치로 설정 */
+  position: absolute; 
   top: 50%;
-  left: 0%; /* 로고를 수평 중앙 정렬 */
-  transform: translate(-50%, -50%); /* 로고를 수직 및 수평 중앙 정렬 */
+  left: 0%; 
+  transform: translate(-50%, -50%); 
 }
 
 .logo img {
-  height: 600px; /* 로고 크기 키우기 */
+  height: 600px; 
   width: auto;
 }
 
@@ -56,7 +56,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
-  position: relative; /* 네비게이션 바가 로고에 영향을 미치지 않도록 설정 */
+  position: relative; 
 }
 
 h1, h2, h3, h4, h5 {
@@ -82,7 +82,6 @@ p {
 a {
   text-decoration: none;
   color: inherit;
-  transition: var(--transition);
 }
 
 img{
@@ -113,9 +112,9 @@ img{
 }
 
 header {
-  background-color: #2E7D32; /* 초록색 배경 */
+  background-color: #2E7D32; 
   padding: 12px 0;
-  position: relative; /* 네비게이션 바가 로고에 영향을 받지 않도록 부모에 상대적 위치 설정 */
+  position: relative;
   z-index: 1000;
 }
 
@@ -126,7 +125,7 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  position: relative; /* 네비게이션 바가 로고와 겹치지 않도록 설정 */
+  position: relative; 
 }
 
 .site-name {
@@ -168,7 +167,7 @@ header {
 nav {
   display: flex;
   gap: 20px;
-  z-index: 1; /* 네비게이션 메뉴가 로고 위로 오도록 설정 */
+  z-index: 1; 
 }
 
 nav a {
@@ -282,7 +281,6 @@ nav a.active::after {
   padding: 12px 28px;
   border-radius: 50px;
   font-weight: 600;
-  transition: var(--transition);
   text-align: center;
   font-size: 1rem;
   cursor: pointer;
@@ -301,7 +299,6 @@ nav a.active::after {
 .cta-button.primary:hover {
   background-color: var(--accent-dark);
   transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
 }
 
 .cta-button.secondary {
@@ -317,16 +314,9 @@ nav a.active::after {
 
 /* Why Choose Section */
 .why-choose {
-  padding: 10px 0 10px; /* 아래 패딩을 줄임 */
+  padding: 10px 0 10px;
   background-color: var(--gray-light);
   text-align: center;
-}
-#highlight .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3개의 열로 나누기 */
-  gap: 20px; /* 카드 간격 */
-  justify-items: center; /* 카드들을 가로로 가운데 정렬 */
-  margin-bottom: 50px; /* 카드 하단 간격 추가 */
 }
 
 /* Highlight Card 1 */
@@ -336,118 +326,9 @@ nav a.active::after {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  border-top: 4px solid #4CAF50; /* 초록색 보더 추가 */
-  transition: transform 0.3s ease-in-out; /* hover 애니메이션 효과 추가 */
+  border-top: 4px solid #4CAF50; 
+  transition: transform 0.3s ease-in-out; 
 }
-
-/* Highlight Card 2 */
-.highlight-card2 {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  border-top: 4px solid #4CAF50; /* 초록색 보더 추가 */
-  transition: transform 0.3s ease-in-out; /* hover 애니메이션 효과 추가 */
-}
-
-/* Highlight Card 3 */
-.highlight-card3 {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  border-top: 4px solid #4CAF50; /* 초록색 보더 추가 */
-  transition: transform 0.3s ease-in-out; /* hover 애니메이션 효과 추가 */
-}
-
-/* 카드 hover 효과 */
-.highlight-card1:hover,
-.highlight-card2:hover,
-.highlight-card3:hover {
-  transform: translateY(-10px); /* 클릭 시 위로 이동 */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 그림자 효과 강조 */
-}
-
-/* 공통 아이콘 스타일 */
-.card-icon svg {
-  margin-bottom: 15px;
-}
-
-/* 모바일 화면에서 그리드 설정 */
-@media (max-width: 768px) {
-  .highlight-cards {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 작은 화면에서 그리드 레이아웃 조정 */
-  }
-}
-
-/* About Section */
-.about {
-  padding: 80px 0;
-  background-color: var(--text-light);
-}
-
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-}
-
-.about-text {
-  padding-right: 20px;
-}
-
-.about-text .section-header {
-  text-align: left;
-}
-
-.about-text p {
-  margin-bottom: 20px;
-  color: var(--text-dark);
-  font-size: 1.05rem;
-  line-height: 1.8;
-}
-
-.text-btn {
-  display: inline-flex;
-  align-items: center;
-  color: var(--primary-color);
-  font-weight: 600;
-  margin-top: 10px;
-  transition: var(--transition);
-}
-
-.text-btn span {
-  margin-left: 5px;
-  transition: var(--transition);
-}
-
-.text-btn:hover {
-  color: var(--primary-dark);
-}
-
-.text-btn:hover span {
-  transform: translateX(5px);
-}
-
-.about-image {
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-}
-
-/* Features Section Styles */
-.features {
-  padding: 80px 0;
-  background-color: var(--gray-light);
-  margin-top: 30px; /* Features 섹션과 제목 사이에 여백 추가 */
-}
-.section-header {
-  padding: 10px;
-  word-spacing: 2px; /* 단어 간격 추가 */
-  }
 
 /* --------------------------------------------------------------------------------------------------------------------- */
 .feature-grid {
@@ -461,15 +342,12 @@ nav a.active::after {
   background-color: var(--text-light);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
-  transition: var(--transition);
   display: grid;
   grid-template-columns: 1fr;
 }
 
 .feature-box:hover {
   transform: translateY(-10px);
-  box-shadow: var(--shadow-lg);
 }
 
 .feature-img {
@@ -557,7 +435,6 @@ footer {
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding: auto;
   align-items: center;
   position: relative;
 }
@@ -626,8 +503,6 @@ footer {
   opacity: 0;
   visibility: hidden;
   transition: var(--transition);
-  box-shadow: var(--shadow-md);
-  z-index: 99;
 }
 
 .back-to-top:hover {
