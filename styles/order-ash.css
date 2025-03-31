@@ -511,7 +511,7 @@ nav a.active::after {
 /* Call to Action Section */
 .cta-section {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-              url('images/hero.jpg');
+              url('../images/hero.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
