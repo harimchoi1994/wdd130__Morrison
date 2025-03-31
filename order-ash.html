@@ -3,72 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza & Diet</title>
-    <link rel="stylesheet" href="styles/order-ash.css"> 
+    <title>Zucchini Bros Pizza - Healthy Gourmet Pizza</title>
+<link rel="stylesheet" href="styles/order-ash.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!-- Header -->
-   <header>
-        <nav>
-            <ul>
-                <li class="logo">
-                    <img src="images/zucchini_bros_logo.jpeg" alt="Logo">
-                </li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="order-ash.html">Place an Order</a></li>
-                <li><a href="#">Jobs</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header>
+        <div class="container">
+          <div class="logo">
+            <img src="images/logo_images.png" alt="Zucchini Bros Pizza">
+          </div>
+          <h1 class="site-name">Zucchini Bros Pizza</h1>
+          <div class="search-bar">
+            <input type="text" placeholder="Search our menu...">
+            <button class="search-btn">Search</button>
+          </div>
+          <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="order-ash.html">Place an Order</a>
+            <a href="#">Jobs</a>
+            <a href="#">Cart</a>
+          </nav>
+          <button class="order-btn">Order Now</button>
+        </div>
+      </header>
 
-    <h1>Specialties</h1>
-    <div class="wrapper">
-        <div class="grid-item">
-            <img src="images/p1.webp" alt="pizza 1">
-            <p>Deluxe</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="hero-content">
+                        <h2>Healthy Meets <span>Delicious</span></h2>
+                        <p class="tagline">Have your Pizza and your diet too</p>
+                        <div class="cta-container">
+                            <a href="#menu" class="cta-button primary">View Our Menu</a>
+                            <a href="#about" class="cta-button secondary">Our Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="grid-item">
-            <img src="images/p2.jpeg" alt="pizza 2">
-            <p>Meat Lovers</p>
-        </div>
-        <div class="grid-item">
-            <img src="images/p3.jpeg" alt="pizza 3">
-            <p>BBQ Chicken</p>
-        </div>
-        <div class="grid-item">
-            <img src="images/p4.jpeg" alt="pizza 4">
-            <p>Hawiian BBQ</p>
-        </div>
-        <div class="grid-item">
-            <img src="images/p5.jpeg" alt="pizza 5">
-            <p>Chicken Bacon Tomato</p>
-        </div>
-        <div class="grid-item">
-            <img src="images/p6.jpeg" alt="pizza 6">
-            <p>Veggie</p>
-        </div>
-        <div class="grid-item">
-            <img src="images/p7.jpeg" alt="pizza 7">
-            <p>Italian Supreme </p>
-        </div>
-        <div class="grid-item">
-            <img src="images/p8.jpeg" alt="pizza 8">
-            <p>Pepperoni Fanatic</p>
-        </div>
-        <div class="grid-item">
-            <img src="images/p9.jpeg" alt="pizza 9">
-            <p>Ultimate Hawaiian</p>
-        </div>
+    </section>
 
-
+<!-- Why Choose Zucchini Bros Section -->
+<!-- Why Choose Section -->
+<section class="why-choose" id="why-choose">
+    <div class="section-header">
+        <h2>Choose from <span>Our Menu</span></h2>
+        <p>Innovative healthy pizza without sacrificing taste</p>
     </div>
+</section>
 
-    <h2>Build Your Own</h2>
+    <!-- Features Section -----------------------------------------------------------------------------------this is the grid--> 
+    <section class="features" id="features">
+        <div class="container">
+                <div class="feature-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                        <img src="images/p1.webp" alt="Feature Image 1">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Deluxe</h3>
+                        </div>
+                    </div>
 
-    
+                    <!-- Feature 2 -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                        <img src="images/p2.jpeg" alt="Feature Image 2">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Meat Lovers</h3>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                        <img src="images/p3.jpeg" alt="Feature Image 2">
+                        </div>
+                        <div class="feature-text">
+                            <h3>BBQ Chicken</h3>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                        <img src="images/p4.jpeg" alt="Feature Image 2">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Hawiian BBQ</h3>
+                        </div>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                        <img src="images/p5.jpeg" alt="Feature Image 2">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Chicken Bacon Tomato</h3>
+                        </div>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                        <img src="images/p6.jpeg" alt="Feature Image 2">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Veggie</h3>
+                        </div>
+                    </div>
+
+                    <!-- Feature 7 -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                        <img src="images/p7.jpeg" alt="Feature Image 2">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Italian Supreme</h3>
+                        </div>
+                    </div>
+
+                    <!-- Feature 8 -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                        <img src="images/p8.jpeg" alt="Feature Image 2">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Pepperoni Fanatic</h3>
+                        </div>
+                    </div>
+
+                    <!-- Feature 9 -->
+                    <div class="feature-box">
+                        <div class="feature-img">
+                        <img src="images/p9.jpeg" alt="Feature Image 2">
+                        </div>
+                        <div class="feature-text">
+                            <h3>Ultimate Hawaiian</h3>
+                        </div>
+                    </div>
+
+
+                </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Try <span>Building Your Own</span> You'll Love It!</h2>
+                <p>Order online for pickup or delivery today!</p>
+                <a href="#" class="cta-button primary large">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        Footer
+        <div class="footer-container">
+                
+           <div class="footer-text">
+            <span style="font-size: 1.5em; font-weight: bold;">Zucchini Bros Pizza</span>
+           </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Menu</h3>
+                    <a href="#">Pizza Menu</a>
+                    <a href="#">Sides</a>
+                    <a href="#">Beverages</a>
+                    <a href="#">Nutrition Info</a>
+                </div>
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <a href="#">Our Story</a>
+                    <a href="#">Locations</a>
+                    <a href="#">Franchise</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Delivery Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Newsletter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Zucchini Bros Pizza. All rights reserved.</p>
+        </div>
     </footer>
-    
+    <!-- Back to Top Button -->
+    </a>
 </body>
 </html>
