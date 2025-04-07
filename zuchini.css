@@ -442,7 +442,7 @@ nav a.active::after {
 .features {
   padding: 0 0 80px; /* Remove extra padding at the top of the features section */
   background-color: var(--gray-light);
-  margin-top: 0px; /* Adjust spacing if needed */
+  margin-top: 20px; /* Adjust spacing if needed */
 }
 
 #features-title {
@@ -464,7 +464,7 @@ nav a.active::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 40px;
-  margin-top: 0; /* Remove space above the feature cards */
+  margin-top: 20px; /* Remove space above the feature cards */
 }
 
 .feature-box {
